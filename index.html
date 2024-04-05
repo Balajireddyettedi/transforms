@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+        .tr{
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            background-color: yellow;
+        }
+        input:active ~ .tr1{
+            transform: translate(100px,100px);
+            
+        }
+        
+        input:active + .tr2{
+            transform: scale(1.5);
+            
+        }
+        input:active + .tr3{
+            transform: skew(45deg);
+
+        }
+        input:active + .tr4{
+            transform: rotate(150deg);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <input type="radio"/>translate
+    <div class="tr tr1">
+      item  
+    </div><br><br>
+    <input type="radio"/>scale
+    <div class="tr tr2">
+      item  
+    </div><br><br>
+    <input type="radio"/>skew
+    <div class="tr tr3">
+      item  
+    </div><br><br>
+    <input type="radio"/>rotate
+    <div class="tr tr4">
+      item  
+    </div><br><br>
+    
+</body>
+</html>
